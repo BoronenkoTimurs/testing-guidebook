@@ -5,7 +5,8 @@ const { remote } = require("webdriverio");
 (async () => {
   // Create new session using 'remote'. Saving the reference to a browser obj
   const browser = await remote({
-    // port: 9515,
+    // port: 9515, //used for chromedriver
+    // path: "/wd/hub", //used for selenium-standalone
     capabilities: {
       browserName: "chrome",
     },
